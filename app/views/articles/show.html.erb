@@ -2,13 +2,21 @@
 
 <p>
 
-Title: <%= @article.title %>
+<div class='blogTitle'>Title: <%= @article.title %></div>
 
 </p>
+   <div class='infoBox'>
+            <hr>
+            <%=@blog.user.username%>
+            <hr>
+            Date
+            <hr>
+   </div>
+
 
 <p>
 
-Description: <%= @article.description %>
+<div class='blogText'>Description: <%= @article.description %></div>
 
 </p>
 <%= link_to "Edit this article", edit_article_path(@article) %> |
